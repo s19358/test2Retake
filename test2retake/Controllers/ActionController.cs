@@ -36,7 +36,7 @@ namespace test2retake.Controllers
             }
             catch(OnGoingActionException ex)
             {
-                return NotFound(ex.Message);
+                return BadRequest(ex.Message);
             }
         }
 
